@@ -50,6 +50,9 @@
 
 /* MOBILE */
 @media (max-width: 46.1875em) {
+    html {
+        overflow-y: overlay;
+    }
     .header {
         padding: 0 20px;
     }
