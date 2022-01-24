@@ -618,7 +618,6 @@ textarea {
 
 /* FOOTER-CONTACT */
 .footer {
-    min-height: 101vh;
     padding: 100px;
     display: flex;
     background-color: rgba(255, 255, 255, .5);

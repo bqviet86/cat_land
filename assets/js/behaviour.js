@@ -23,9 +23,9 @@ for(const navItem of navItems) {
         const navItemActive = document.querySelector(".navbar-item.active");
         navItemActive.classList.remove("active");
         this.classList.add("active");
-    }
-    
+    } 
 }
+
 // MODAL
 const app = document.getElementById("app");
 
@@ -77,7 +77,7 @@ if (app) {
                 </div>
                 <img class="gallery-modal-img" src="${src}" alt="">
             `;
-            galleryModal.innerHTML= innerImg;
+            galleryModal.innerHTML = innerImg;
             openModal();
             lockScroll(true);
         }
@@ -85,17 +85,13 @@ if (app) {
 }
 
 // NAV-ITEM ACTIVE
-// const homeActive = document.querySelector(".nav-home");
-// const speciesActive = document.querySelector(".nav-species");
-// const galleryActive = document.querySelector(".nav-gallery");
-// const contactActive = document.querySelector(".nav-contact");
-let navbarItems = document.querySelectorAll(".navbar-item:not(:last-child)");
-let sec = document.querySelectorAll(".section:not(:nth-child(2))");
+// let navItems = document.querySelectorAll(".navbar-item:not(:last-child)");
+let sec= document.querySelectorAll(".section:not(:nth-child(2))");
 
 function activeNavbar() {
     let len = sec.length;
-    while(--len && window.scrollY < sec[len].offsetTop){}
-    navbarItems.forEach(ltx => ltx.classList.remove("active"));
+    while(--len && window.scrollY + 10 < sec[len].offsetTop){}
+    navItems.forEach(ltx => ltx.classList.remove("active"));
     navItems[len].classList.add("active");
 }
 activeNavbar();
