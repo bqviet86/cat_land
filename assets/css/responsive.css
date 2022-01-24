@@ -104,8 +104,7 @@
         text-align: center;
     }
     .section {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 50px 16px;
     }
     .info-item {
         width: 100%;
@@ -141,5 +140,10 @@
     }
     .contact-info {
         text-align: center;
+        margin-top: 50px;
+    }
+    .contact-info-section + 
+    .contact-info-section {
+        margin-top: 40px;
     }
 }
